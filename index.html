@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>夏方波 | 学术主页</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;600&family=Noto+Serif:wght@400;600;700&family=Noto+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">夏方波</a>
+            <ul class="nav-menu">
+                <li><a href="#about" data-en="About" data-zh="关于">关于</a></li>
+                <li><a href="#research" data-en="Research" data-zh="研究">研究</a></li>
+                <li><a href="#publications" data-en="Publications" data-zh=" publications"> publications</a></li>
+                <li><a href="#teaching" data-en="Teaching" data-zh=" teaching"> teaching</a></li>
+                <li><a href="#contact" data-en="Contact" data-zh="联系">联系</a></li>
+                <li><button class="lang-toggle" onclick="toggleLanguage()">EN</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 首页 -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="avatar-container">
+                <img src="avatar.jpg" alt="夏方波" class="avatar" onerror="this.style.display='none'">
+            </div>
+            <h1 class="hero-title">夏方波</h1>
+            <p class="hero-subtitle" data-zh="北京外国语大学 国际关系学院 助理教授" data-en="Assistant Professor, School of International Relations and Diplomacy, BFSU">北京外国语大学 国际关系学院 助理教授</p>
+            <p class="hero-description" data-zh="专注于东南亚比较政治、内战与种族冲突、区域国别研究（印度尼西亚、菲律宾）" data-en="Specializing in Comparative Politics of Southeast Asia, Civil Wars and Ethnic Conflicts, with a focus on Indonesia and the Philippines">专注于东南亚比较政治、内战与种族冲突、区域国别研究（印度尼西亚、菲律宾）</p>
+            <div class="hero-links">
+                <a href="#research" class="btn btn-primary" data-zh="查看研究" data-en="View Research">查看研究</a>
+                <a href="#contact" class="btn btn-outline" data-zh="联系我" data-en="Contact Me">联系我</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于 -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title" data-zh="关于我" data-en="About Me">关于我</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-zh="我现任北京外国语大学国际关系学院助理教授。2018年获北京大学印尼语语言文学学士学位，2023年获清华大学政治学博士学位。我的研究兴趣包括东南亚比较政治、内战与种族冲突，专注于印度尼西亚和菲律宾。" data-en="I am an Assistant Professor in the School of International Relations and Diplomacy at Beijing Foreign Studies University. I received my B.A. in Indonesian Language and Literature from Peking University in 2018, and Ph.D. in Political Science from Tsinghua University in 2023. My research interests include Comparative Politics of Southeast Asia, Civil Wars and Ethnic Conflicts, with a focus on Indonesia and the Philippines.">我现任北京外国语大学国际关系学院助理教授。2018年获北京大学印尼语语言文学学士学位，2023年获清华大学政治学博士学位。我的研究兴趣包括东南亚比较政治、内战与种族冲突，专注于印度尼西亚和菲律宾。</p>
+                    <p data-zh="我曾赴美国西北大学、印度尼西亚大学、菲律宾大学迪利曼校区进行访问研究。目前专注于东南亚分离主义运动的国家回应理论研究。" data-en="I have conducted visiting research at Northwestern University (USA), Universitas Indonesia, and University of the Philippines, Diliman. Currently, I am working on the State Response Theory of secessionist movements in Southeast Asia.">我曾赴美国西北大学、印度尼西亚大学、菲律宾大学迪利曼校区进行访问研究。目前专注于东南亚分离主义运动的国家回应理论研究。</p>
+                </div>
+                <div class="about-info">
+                    <h3 data-zh="教育背景" data-en="Education">教育背景</h3>
+                    <ul class="info-list">
+                        <li>
+                            <span class="year">2023</span>
+                            <span class="degree" data-zh="政治学博士，清华大学" data-en="Ph.D., Political Science, Tsinghua University">政治学博士，清华大学</span>
+                        </li>
+                        <li>
+                            <span class="year">2018</span>
+                            <span class="degree" data-zh="印尼语语言文学学士，北京大学" data-en="B.A., Indonesian Language and Literature, Peking University">印尼语语言文学学士，北京大学</span>
+                        </li>
+                    </ul>
+                    <h3 data-zh="访学经历" data-en="Visiting Research">访学经历</h3>
+                    <ul class="info-list">
+                        <li>
+                            <span class="year">2022-2023</span>
+                            <span class="degree" data-zh="美国西北大学" data-en="Northwestern University, USA">美国西北大学</span>
+                        </li>
+                        <li>
+                            <span class="year">2021-2022</span>
+                            <span class="degree" data-zh="印度尼西亚大学" data-en="Universitas Indonesia">印度尼西亚大学</span>
+                        </li>
+                        <li>
+                            <span class="year">2019-2020</span>
+                            <span class="degree" data-zh="菲律宾大学迪利曼校区" data-en="University of the Philippines, Diliman">菲律宾大学迪利曼校区</span>
+                        </li>
+                    </ul>
+                    <h3 data-zh="工作经历" data-en="Professional Experience">工作经历</h3>
+                    <ul class="info-list">
+                        <li>
+                            <span class="year">2023-至今</span>
+                            <span class="degree" data-zh="助理教授，北京外国语大学国际关系学院" data-en="Assistant Professor, School of IR & Diplomacy, BFSU">助理教授，北京外国语大学国际关系学院</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 研究 -->
+    <section id="research" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title" data-zh="研究方向" data-en="Research Interests">研究方向</h2>
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="research-icon">🎯</div>
+                    <h3 data-zh="东南亚比较政治" data-en="Comparative Politics of Southeast Asia">东南亚比较政治</h3>
+                    <p data-zh="研究东南亚国家的政治制度、治理模式与政治发展" data-en="Research on political systems, governance models, and political development in Southeast Asian countries">研究东南亚国家的政治制度、治理模式与政治发展</p>
+                </div>
+                <div class="research-card">
+                    <div class="research-icon">🤝</div>
+                    <h3 data-zh="内战与种族冲突" data-en="Civil Wars and Ethnic Conflicts">内战与种族冲突</h3>
+                    <p data-zh="探讨东南亚国家内部冲突的根源、演变与国家回应机制" data-en="Exploring the roots, evolution, and state response mechanisms of internal conflicts in Southeast Asian countries">探讨东南亚国家内部冲突的根源、演变与国家回应机制</p>
+                </div>
+                <div class="research-card">
+                    <div class="research-icon">👥</div>
+                    <h3 data-zh="分离主义运动" data-en="Secessionist Movements">分离主义运动</h3>
+                    <p data-zh="研究东南亚分离主义运动的国家回应理论" data-en="Research on state response theory of secessionist movements in Southeast Asia">研究东南亚分离主义运动的国家回应理论</p>
+                </div>
+                <div class="research-card">
+                    <div class="research-icon">🌏</div>
+                    <h3 data-zh="区域国别研究" data-en="Area Studies">区域国别研究</h3>
+                    <p data-zh="专注于印度尼西亚与菲律宾的政治发展" data-en="Focusing on political development in Indonesia and the Philippines">专注于印度尼西亚与菲律宾的政治发展</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  publications -->
+    <section id="publications" class="section">
+        <div class="container">
+            <h2 class="section-title" data-zh=" publications" data-en="Publications"> publications</h2>
+
+            <!-- 独著 -->
+            <div class="pub-section">
+                <h3 data-zh="独著" data-en="Monograph">独著</h3>
+                <ul class="pub-list">
+                    <li class="pub-item">
+                        <span class="pub-year">2024</span>
+                        <div class="pub-content">
+                            <p class="pub-title" data-zh="《东南亚多民族国家整合的迷思（1970-2019）》" data-en="The Myth of Multi-Ethnic Nation-Building in Southeast Asia (1970-2019)">《东南亚多民族国家整合的迷思（1970-2019）》</p>
+                            <p class="pub-journal" data-zh="中国社会科学出版社" data-en="China Social Sciences Press">中国社会科学出版社</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 期刊论文 -->
+            <div class="pub-section">
+                <h3 data-zh="期刊论文" data-en="Journal Articles">期刊论文</h3>
+                <ul class="pub-list">
+                    <li class="pub-item">
+                        <span class="pub-year">2026</span>
+                        <div class="pub-content">
+                            <p class="pub-title" data-zh="《东南亚政党政治的新趋向：家族与政党互嵌的特征、成因与前景》" data-en="New Trends in Southeast Asian Party Politics: Characteristics, Causes and Prospects of Party-Family Interlocking">《东南亚政党政治的新趋向：家族与政党互嵌的特征、成因与前景》</p>
+                            <p class="pub-journal" data-zh="《当代世界与社会主义》2026年第1期（独作）" data-en="Contemporary World and Socialism, No.1, 2026 (Solo author)">《当代世界与社会主义》2026年第1期（独作）</p>
+                        </div>
+                    </li>
+                    <li class="pub-item">
+                        <span class="pub-year">2025</span>
+                        <div class="pub-content">
+                            <p class="pub-title" data-zh="《战略互动与东南亚分离问题的治理逻辑》" data-en="Strategic Interaction and Governance Logic of Southeast Asian Separatism">《战略互动与东南亚分离问题的治理逻辑》</p>
+                            <p class="pub-journal" data-zh="《国际政治科学》2025年第4期（独作）" data-en="International Political Science Review, No.4, 2025 (Solo author)">《国际政治科学》2025年第4期（独作）</p>
+                        </div>
+                    </li>
+                    <li class="pub-item">
+                        <span class="pub-year">2025</span>
+                        <div class="pub-content">
+                            <p class="pub-title" data-zh="《菲律宾权力精英的三角互动模式及其变迁轨迹》" data-en="Triangular Interaction Pattern of Philippine Power Elites and Its Changing Trajectory">《菲律宾权力精英的三角互动模式及其变迁轨迹》</p>
+                            <p class="pub-journal" data-zh="《东南亚研究》2025年第4期（独作），人大复印报刊资料《国际政治》2025年第11期全文转载" data-en="Southeast Asian Studies, No.4, 2025 (Solo author), reprinted in International Politics">《东南亚研究》2025年第4期（独作），人大复印报刊资料《国际政治》2025年第11期全文转载</p>
+                        </div>
+                    </li>
+                    <li class="pub-item">
+                        <span class="pub-year">2025</span>
+                        <div class="pub-content">
+                            <p class="pub-title" data-zh="《威胁态势与军队政治化的差异路径及其逻辑分析——基于泰国与缅甸的比较研究》" data-en="Threat Posture and Different Paths of Military Politicization: A Comparative Study of Thailand and Myanmar">《威胁态势与军队政治化的差异路径及其逻辑分析——基于泰国与缅甸的比较研究》</p>
+                            <p class="pub-journal" data-zh="《区域国别学刊》2025年第2期（第一作者），人大复印报刊资料《国际政治》2025年第7期全文转载" data-en="Journal of Area Studies, No.2, 2025 (First author), reprinted in International Politics">《区域国别学刊》2025年第2期（第一作者），人大复印报刊资料《国际政治》2025年第7期全文转载</p>
+                        </div>
+                    </li>
+                    <li class="pub-item">
+                        <span class="pub-year">2024</span>
+                        <div class="pub-content">
+                            <p class="pub-title" data-zh="《东南亚家族政治与新自由主义之殇》" data-en="Southeast Asian Family Politics and the Tragedy of Neoliberalism">《东南亚家族政治与新自由主义之殇》</p>
+                            <p class="pub-journal" data-zh="《东南亚研究》2024年第6期（独作），人大复印报刊资料《国际政治》2025年第4期全文转载" data-en="Southeast Asian Studies, No.6, 2024 (Solo author), reprinted in International Politics">《东南亚研究》2024年第6期（独作），人大复印报刊资料《国际政治》2025年第4期全文转载</p>
+                        </div>
+                    </li>
+                    <li class="pub-item">
+                        <span class="pub-year">2024</span>
+                        <div class="pub-content">
+                            <p class="pub-title" data-zh="《民主改革时代印度尼西亚政治家族崛起的逻辑分析》" data-en="Logic Analysis of the Rise of Political Families in Post-Reform Indonesia">《民主改革时代印度尼西亚政治家族崛起的逻辑分析》</p>
+                            <p class="pub-journal" data-zh="《南洋问题研究》2024年第4期（独作）" data-en="Southeast Asian Affairs, No.4, 2024 (Solo author)">《南洋问题研究》2024年第4期（独作）</p>
+                        </div>
+                    </li>
+                    <li class="pub-item">
+                        <span class="pub-year">2024</span>
+                        <div class="pub-content">
+                            <p class="pub-title" data-zh="《"同袍异志"：美国盟国对华半导体网络化制裁的政治经济逻辑》" data-en=""Comrades-in-Arms, Different Purposes": Political Economy Logic of US Allies' Network Sanctions on China's Semiconductor Industry">《"同袍异志"：美国盟国对华半导体网络化制裁的政治经济逻辑》</p>
+                            <p class="pub-journal" data-zh="《当代亚太》2024年第6期（通讯作者）" data-en="Contemporary Asia-Pacific, No.6, 2024 (Corresponding author)">《当代亚太》2024年第6期（通讯作者）</p>
+                        </div>
+                    </li>
+                    <li class="pub-item">
+                        <span class="pub-year">2024</span>
+                        <div class="pub-content">
+                            <p class="pub-title" data-zh="《动员困境与拜登政府时期美国印太盟伴体系的调整》" data-en="Mobilization Dilemma and Adjustment of US Indo-Pacific Alliance System under Biden Administration">《动员困境与拜登政府时期美国印太盟伴体系的调整》</p>
+                            <p class="pub-journal" data-zh="《国际关系研究》2024年第3期（第一作者）" data-en="International Relations Studies, No.3, 2024 (First author)">《国际关系研究》2024年第3期（第一作者）</p>
+                        </div>
+                    </li>
+                    <li class="pub-item">
+                        <span class="pub-year">2023</span>
+                        <div class="pub-content">
+                            <p class="pub-title" data-zh="《民粹政治与东南亚政治精英的分化和合流》" data-en="Populist Politics and the Differentiation and Convergence of Southeast Asian Political Elites">《民粹政治与东南亚政治精英的分化和合流》</p>
+                            <p class="pub-journal" data-zh="《东南亚研究》2023年第5期（独作）" data-en="Southeast Asian Studies, No.5, 2023 (Solo author)">《东南亚研究》2023年第5期（独作）</p>
+                        </div>
+                    </li>
+                    <li class="pub-item">
+                        <span class="pub-year">2022</span>
+                        <div class="pub-content">
+                            <p class="pub-title" data-zh="《双重整合博弈与分离主义运动的进程性模式分异》" data-en="Dual Integration Game and Progressive Pattern Differentiation of Secessionist Movements">《双重整合博弈与分离主义运动的进程性模式分异》</p>
+                            <p class="pub-journal" data-zh="《世界经济与政治》2022年第6期（第一作者），人大复印报刊资料《国际政治》2022年第9期全文转载" data-en="World Economics and Politics, No.6, 2022 (First author), reprinted in International Politics">《世界经济与政治》2022年第6期（第一作者），人大复印报刊资料《国际政治》2022年第9期全文转载</p>
+                        </div>
+                    </li>
+                    <li class="pub-item">
+                        <span class="pub-year">2021</span>
+                        <div class="pub-content">
+                            <p class="pub-title" data-zh="《政治转型、权力结构与政党制度化发展——以印度尼西亚为例》" data-en="Political Transition, Power Structure and Party Institutionalization: A Case Study of Indonesia">《政治转型、权力结构与政党制度化发展——以印度尼西亚为例》</p>
+                            <p class="pub-journal" data-zh="《东南亚研究》2021年第2期（独作）" data-en="Southeast Asian Studies, No.2, 2021 (Solo author)">《东南亚研究》2021年第2期（独作）</p>
+                        </div>
+                    </li>
+                    <li class="pub-item">
+                        <span class="pub-year">2020</span>
+                        <div class="pub-content">
+                            <p class="pub-title" data-zh="《伊斯兰政党世俗化改革动因及运作机理探析》" data-en="Analysis of the Motivations and Operational Mechanisms of Secularization Reform in Islamic Parties">《伊斯兰政党世俗化改革动因及运作机理探析》</p>
+                            <p class="pub-journal" data-zh="《国际论坛》2021年第2期（第二作者）" data-en="International Forum, No.2, 2021 (Second author)">《国际论坛》2021年第2期（第二作者）</p>
+                        </div>
+                    </li>
+                    <li class="pub-item">
+                        <span class="pub-year">2020</span>
+                        <div class="pub-content">
+                            <p class="pub-title" data-zh="《民族主义政权与伊斯兰政党的盛衰：以印度尼西亚为例》" data-en="Nationalist Regimes and the Rise and Fall of Islamic Political Parties: The Case of Indonesia">《民族主义政权与伊斯兰政党的盛衰：以印度尼西亚为例》</p>
+                            <p class="pub-journal" data-zh="《当代世界与社会主义》2020年第5期（第二作者）" data-en="Contemporary World and Socialism, No.5, 2020 (Second author)">《当代世界与社会主义》2020年第5期（第二作者）</p>
+                        </div>
+                    </li>
+                    <li class="pub-item">
+                        <span class="pub-year">2020</span>
+                        <div class="pub-content">
+                            <p class="pub-title" data-zh="《印尼地方自治制度与族群政治：基于印尼乡村普查数据的实证研究》" data-en="Indonesia's Local Autonomy System and Ethnic Politics: An Empirical Study Based on Indonesian Village Census Data">《印尼地方自治制度与族群政治：基于印尼乡村普查数据的实证研究》</p>
+                            <p class="pub-journal" data-zh="《南洋问题研究》2020年第3期（独作）" data-en="Southeast Asian Affairs, No.3, 2020 (Solo author)">《南洋问题研究》2020年第3期（独作）</p>
+                        </div>
+                    </li>
+                    <li class="pub-item">
+                        <span class="pub-year">2019</span>
+                        <div class="pub-content">
+                            <p class="pub-title" data-zh="《印尼"新秩序"的权力文化："家产主义"的起源与扩散》" data-en="Power Culture of Indonesia's "New Order": Origin and Diffusion of "Patrimonialism"">《印尼"新秩序"的权力文化："家产主义"的起源与扩散》</p>
+                            <p class="pub-journal" data-zh="《南亚东南亚研究》2019年第4期（独作）" data-en="South and Southeast Asian Studies, No.4, 2019 (Solo author)">《南亚东南亚研究》2019年第4期（独作）</p>
+                        </div>
+                    </li>
+                    <li class="pub-item">
+                        <span class="pub-year">2019</span>
+                        <div class="pub-content">
+                            <p class="pub-title" data-zh="《后威权时代的印尼地方分权与政治变迁》" data-en="Indonesia's Local Decentralization and Political Change in the Post-Authoritarian Era">《后威权时代的印尼地方分权与政治变迁》</p>
+                            <p class="pub-journal" data-zh="《东南亚研究》2019年第2期（第二作者）" data-en="Southeast Asian Studies, No.2, 2019 (Second author)">《东南亚研究》2019年第2期（第二作者）</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 集刊论文 -->
+            <div class="pub-section">
+                <h3 data-zh="集刊论文" data-en="Book Chapter Articles">集刊论文</h3>
+                <ul class="pub-list">
+                    <li class="pub-item">
+                        <span class="pub-year">2025</span>
+                        <div class="pub-content">
+                            <p class="pub-title" data-zh="《庇护式军队：家族、资本与菲律宾军政治关系的变迁》" data-en="Patronage Military: Family, Capital and the Transformation of Military-Political Relations in the Philippines">《庇护式军队：家族、资本与菲律宾军政治关系的变迁》</p>
+                            <p class="pub-journal" data-zh="《比较政治学研究》2025年第1辑（独作）" data-en="Comparative Political Studies, Vol.1, 2025 (Solo author)">《比较政治学研究》2025年第1辑（独作）</p>
+                        </div>
+                    </li>
+                    <li class="pub-item">
+                        <span class="pub-year">2021</span>
+                        <div class="pub-content">
+                            <p class="pub-title" data-zh="《印度尼西亚佐科政府的数字经济发展探析》" data-en="Analysis of Digital Economy Development under Indonesia's Joko Widodo Administration">《印度尼西亚佐科政府的数字经济发展探析》</p>
+                            <p class="pub-journal" data-zh="《中国周边外交研究》2021年第1辑（独作）" data-en="China's Neighboring Diplomacy Studies, Vol.1, 2021 (Solo author)">《中国周边外交研究》2021年第1辑（独作）</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 译著 -->
+            <div class="pub-section">
+                <h3 data-zh="译著" data-en="Translation">译著</h3>
+                <ul class="pub-list">
+                    <li class="pub-item">
+                        <span class="pub-year">2023</span>
+                        <div class="pub-content">
+                            <p class="pub-title" data-zh="《杀戮季节：1965-1966年印度尼西亚大屠杀历史》" data-en="The Season of Killing: The Indonesian Massacres, 1965-1966">《杀戮季节：1965-1966年印度尼西亚大屠杀历史》</p>
+                            <p class="pub-journal" data-zh="[加]杰弗里·B.罗宾逊 著，世界知识出版社2023年版。夏方波 译："第六章 军队的作用"" data-en="By [CA] Jeffrey B. Robinson, World Affairs Press, 2023. Translated by Xia Fangbo: "Chapter 6: The Role of the Army"">[加]杰弗里·B.罗宾逊 著，世界知识出版社2023年版。夏方波 译："第六章 军队的作用"</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 科研项目 -->
+            <div class="pub-section">
+                <h3 data-zh="科研项目" data-en="Research Projects">科研项目</h3>
+                <ul class="project-list">
+                    <li class="project-item">
+                        <span class="project-year">2025-2028</span>
+                        <div class="project-content">
+                            <p class="project-title" data-zh="主持国家社科基金青年项目《东南亚政党政治"家族化"与家族政治"政党化"的逻辑、影响及中国对策研究》（25CGJ088）" data-en="PI, National Social Science Fund of China (Youth Project): Logic, Impact and China's Countermeasures of "Familization" of Party Politics and "Partization" of Family Politics in Southeast Asia (25CGJ088)">主持国家社科基金青年项目《东南亚政党政治"家族化"与家族政治"政党化"的逻辑、影响及中国对策研究》（25CGJ088）</p>
+                        </div>
+                    </li>
+                    <li class="project-item">
+                        <span class="project-year">2024-2027</span>
+                        <div class="project-content">
+                            <p class="project-title" data-zh="主持中央高校基本科研业务费专项资金《东南亚国家治理分离主义运动的策略选择研究》（246500124002）" data-en="PI, Fundamental Research Funds for Central Universities: Research on Strategy Choice of Southeast Asian Countries in Managing Secessionist Movements (246500124002)">主持中央高校基本科研业务费专项资金《东南亚国家治理分离主义运动的策略选择研究》（246500124002）</p>
+                        </div>
+                    </li>
+                    <li class="project-item">
+                        <span class="project-year">2023-至今</span>
+                        <div class="project-content">
+                            <p class="project-title" data-zh="参与国家社科基金中国历史研究院重大历史问题研究专项2023年度重大招标项目《东南亚现代国家发展历史》（23VLS026）" data-en="Participant, National Social Science Fund of China (Major Project): Modern Nation-Building History of Southeast Asia (23VLS026)">参与国家社科基金中国历史研究院重大历史问题研究专项2023年度重大招标项目《东南亚现代国家发展历史》（23VLS026）</p>
+                        </div>
+                    </li>
+                    <li class="project-item">
+                        <span class="project-year">2025-至今</span>
+                        <div class="project-content">
+                            <p class="project-title" data-zh="参与北京市社会科学基金项目《"中间地带"思维与凝聚全球发展合力研究》（25LLZZB040）" data-en="Participant, Beijing Social Science Fund Project: "Intermediate Zone" Thinking and Building Global Development Consensus (25LLZZB040)">参与北京市社会科学基金项目《"中间地带"思维与凝聚全球发展合力研究》（25LLZZB040）</p>
+                        </div>
+                    </li>
+                    <li class="project-item">
+                        <span class="project-year">2017-至今</span>
+                        <div class="project-content">
+                            <p class="project-title" data-zh="参与国家社会科学基金重大项目《经济全球化波动的政治效应及中国的战略应对》（17ZDA169）" data-en="Participant, National Social Science Fund of China (Major Project): Political Effects of Economic Globalization Fluctuations and China's Strategic Response (17ZDA169)">参与国家社会科学基金重大项目《经济全球化波动的政治效应及中国的战略应对》（17ZDA169）</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- teaching -->
+    <section id="teaching" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title" data-zh=" teaching" data-en="Teaching"> teaching</h2>
+            <div class="teaching-grid">
+                <div class="course-card">
+                    <h3 data-zh="公共政策分析" data-en="Public Policy Analysis">公共政策分析</h3>
+                    <p class="course-info" data-zh="本科/研究生课程" data-en="Undergraduate/Graduate Course">本科/研究生课程</p>
+                    <p class="course-desc" data-zh="系统介绍公共政策分析的理论与方法，培养学生政策分析能力" data-en="Systematically introducing theories and methods of public policy analysis, developing students' policy analysis abilities">系统介绍公共政策分析的理论与方法，培养学生政策分析能力</p>
+                </div>
+                <div class="course-card">
+                    <h3 data-zh="新兴国家研究" data-en="Studies of Emerging States">新兴国家研究</h3>
+                    <p class="course-info" data-zh="本科/研究生课程" data-en="Undergraduate/Graduate Course">本科/研究生课程</p>
+                    <p class="course-desc" data-zh="研究新兴国家的发展道路、政治制度与治理模式" data-en="Researching development paths, political systems, and governance models of emerging states">研究新兴国家的发展道路、政治制度与治理模式</p>
+                </div>
+                <div class="course-card">
+                    <h3 data-zh="东南亚政治与外交" data-en="Politics and Diplomacy of Southeast Asia">东南亚政治与外交</h3>
+                    <p class="course-info" data-zh="研究生课程" data-en="Graduate Course">研究生课程</p>
+                    <p class="course-desc" data-zh="深入分析东南亚地区的政治发展、国际关系与区域合作" data-en="In-depth analysis of political development, international relations, and regional cooperation in Southeast Asia">深入分析东南亚地区的政治发展、国际关系与区域合作</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系 -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title" data-zh="联系" data-en="Contact">联系</h2>
+            <div class="contact-content">
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <h3 data-zh="电子邮件" data-en="Email">电子邮件</h3>
+                    <p><a href="mailto:fangboxia@126.com">fangboxia@126.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🏛</div>
+                    <h3 data-zh="办公地点" data-en="Office">办公地点</h3>
+                    <p data-zh="北京外国语大学 国际关系学院" data-en="School of International Relations and Diplomacy, BFSU">北京外国语大学 国际关系学院</p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🔗</div>
+                    <h3 data-zh="学术链接" data-en="Academic Links">学术链接</h3>
+                    <div class="social-links">
+                        <a href="#" target="_blank">Google Scholar</a>
+                        <a href="#" target="_blank">ResearchGate</a>
+                        <a href="#" target="_blank">CNKI</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 夏方波. <span data-zh="版权所有" data-en="All Rights Reserved">版权所有</span>.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
